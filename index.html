@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <nav>
+
+        <div class="title">
+            <h1>วิชาเทคโนโลยีเว็บ</h1>
+        </div>
+
+    </nav>
+    <!-- Header -->
+
+    <!-- sidebar -->
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>Menu</header>
+    <ul>
+     <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+     <li><a href="#css"><i class="fa fa-circle" aria-hidden="true"></i>CSS</a></li>
+     <li><a href="#javascript"><i class="fa fa-circle" aria-hidden="true"></i>Javascript</a></li>
+     <li><a href="#bootstrap"><i class="fa fa-circle" aria-hidden="true"></i>Bootstrap</a></li>
+     <li><a href="#facebook"><i class="fa fa-circle" aria-hidden="true"></i>FacrbookAPI</a></li>
+     <li><a href="#map"><i class="fa fa-circle" aria-hidden="true"></i>Google map</a></li>
+     <li><a href="#line"><i class="fa fa-circle" aria-hidden="true"></i>LineAPI</a></li>
+    </ul>
+   </div>
+   <!-- sidebar -->
+
+    <!-- info -->
+    <div class="mainInfo">
+
+        <section class="homeInfo">
+
+            <h2 id="home"><br> <br>Home</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum harum qui at eaque, eligendi, ex pariatur deserunt vero inventore rem in, fugiat magnam saepe culpa! Facilis impedit eius recusandae excepturi vitae velit quae quo eos odio, corporis autem quia quod!</p>
+
+        </section>
+
+        <section class="cssInfo">
+
+            <h2 id="css"><br> <br>CSS</h2>
+            <h3>CSS คืออะไร</h3><br>
+            <p style="text-indent: 2.5em;">CSS คือ ภาษาที่ใช้สำหรับตกแต่งเอกสาร HTML/XHTML ให้มีหน้าตา สีสัน ระยะห่าง พื้นหลัง เส้นขอบและอื่นๆ ตามที่ต้องการ CSS ย่อมาจาก Cascading Style Sheets <br> มีลักษณะเป็นภาษาที่มีรูปแบบในการเขียน Syntax แบบเฉพาะและได้ถูกกำหนดมาตรฐานโดย W3C เป็นภาษาหนึ่งในการตกแต่งเว็บไซต์ ได้รับความนิยมอย่างแพร่หลาย</p>
+            
+            <img class="cssImg" src="https://blog.sogoodweb.com/upload/510/8fqvrLbUfr.jpg" alt="">
+            
+            <h3>ประโยชน์ของ CSS</h3><br>
+            <p>CSS มีประโยชน์อย่างหลากหลาย ซึ่งได้แก่</p><br>
+
+            <p>1.ช่วยให้เนื้อหาภายในเอกสาร HTML มีความเข้าใจได้ง่ายขึ้นและในการแก้ไขเอกสารก็สามารถทำได้ง่ายกว่าเดิม เพราะการใช้ CSS จะช่วยลดการใช้ภาษา HTML ลงได้ในระดับหนึ่ง และแยกระหว่างเนื้อหากับรูปแบบในการแสดงผลได้อย่างชัดเจน</p>
+            <br>
+            <p>2.ทำให้สามารถดาวน์โหลดไฟล์ได้เร็ว เนื่องจาก code ในเอกสาร HTML ลดลง จึงทำให้ไฟล์มีขนาดเล็กลง</p><br>
+            <p>3.สามารถกำหนดรูปแบบการแสดผลจากคำสั่ง style sheet ชุดเดียวกัน ให้มีการแสดงผลในเอกสารแบบเดียวทั้งหน้าหรือในทุกๆ หน้าได้ ช่วยลดเวลาในการปรับปรุงและทำให้การสร้างเอกสารบนเว็บมีความรวดเร็วยิ่งขึ้น นอกจากนี้ยังสามารถควบคุมการแสดงผล ให้คล้ายหรือเหมือนกันได้ในหลาย Web Browser</p><br>
+            <p>4.ช่วยในการกำหนดการแสดงผลในรูปแบบที่มีความเหมาะกับสื่อต่างๆ ได้เป็นอย่างดี</p><br>
+            <p>5.ทำให้เว็บไซต์มีความเป็นมาตรฐานมากขึ้นและมีความทันสมัย สามารถรองรับการใช้งานในอนาคตได้ดี</p>
+            <img class="cssImg" src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png" alt="" style="width: 50%;">
+            <h3>ตัวอย่างการใช้งาน css</h3>
+
+            <p>หากเราต้องการเปลี่ยนสีตัวหนังสือของ tag h1 และ เปลี่ยนสีพื้นหลัง ให้ใช้ code ตามนี้</p><br>
+            <textarea class="codeEX" readonly>h1 {
+color: red; //เปลี่ยนสีตัวหนังสือ 
+background-color: blue; //เปลี่ยนสีพื้นหลัง
+}</textarea><br><br>
+            <!-- <p class="csstext">h1 {<br>color: red; //เปลี่ยนสีตัวหนังสือ<br> background-color: blue; //เปลี่ยนสีพื้นหลัง<br>}</p><br><br> -->
+
+            <a href="#live" class="TIY">Try it Yourself</a>
+
+
+        </section>
+
+        <section class="javascriptInfo">
+
+            <h2 id="javascript"><br> <br>Javascript</h2><br>
+
+            <h3>JavaScript คืออะไร</h3><br>
+            <p style="text-indent: 2.5em;">JavaScript เป็นภาษาโปรแกรมที่นักพัฒนาใช้ในการสร้างหน้าเว็บแบบอินเทอร์แอคทีฟ ตั้งแต่การรีเฟรชฟีดสื่อโซเชียลไปจนถึงการแสดงภาพเคลื่อนไหวและแผนที่แบบอินเทอร์แอคทีฟ ฟังก์ชันของ JavaScript สามารถปรับปรุงประสบการณ์ที่ผู้ใช้จะได้รับจากการใช้งานเว็บไซต์ และในฐานะที่เป็นภาษาในการเขียนสคริปต์ฝั่งไคลเอ็นต์ จึงเป็นหนึ่งในเทคโนโลยีหลักของ World Wide Web ยกตัวอย่างเช่น เมื่อคุณท่องเว็บแล้วเห็นภาพสไลด์ เมนูดร็อปดาวน์แบบคลิกให้แสดงผล หรือสีองค์ประกอบที่เปลี่ยนแบบไดนามิกบนหน้าเว็บ นั่นคือคุณเห็นเอฟเฟกต์ของ JavaScript
+            </p><br>
+
+            <h3>JavaScript นำไปใช้ทำอะไร</h3><br>
+            <p style="text-indent: 2.5em;">แต่ก่อนเว็บเพจเป็นแบบคงที่คล้ายกับหน้าหนังสือ โดยหลักแล้วหน้าเพจคงที่แสดงข้อมูลในเค้าโครงที่ตายตัว และไม่ได้ทำทุกอย่างที่ตอนนี้เราคาดหวังจากเว็บไซต์สมัยใหม่ JavaScript เกิดขึ้นในฐานะเทคโนโลยีฝั่งเบราว์เซอร์เพื่อทำให้เว็บแอปพลิเคชันมีความเป็นไดนามิกมากขึ้น เมื่อใช้ JavaScript เบราว์เซอร์จะสามารถตอบสนองต่อการโต้ตอบของผู้ใช้และเปลี่ยนแปลงเค้าโครงเนื้อหาบนเว็บเพจได้
+
+                เมื่อภาษาผ่านการพัฒนาอย่างเต็มที่ นักพัฒนา JavaScript ก็สร้างไลบรารี เฟรมเวิร์ก และแนวทางปฏิบัติในการเขียนโปรแกรม แล้วเริ่มนำ JavaScript ไปใช้นอกเว็บเบราว์เซอร์ วันนี้ คุณสามารถใช้ JavaScript สำหรับทั่งการพัฒนาฝั่งไคลเอ็นต์และฝั่งเซิร์ฟเวอร์ เราให้ตัวอย่างกรณีการใช้พบที่พบบ่อยบางส่วนในหัวข้อย่อยต่อไปนี้:
+                
+                แต่ก่อนเว็บเพจเป็นแบบคงที่คล้ายกับหน้าหนังสือ โดยหลักแล้วหน้าเพจคงที่แสดงข้อมูลในเค้าโครงที่ตายตัว และไม่ได้ทำทุกอย่างที่ตอนนี้เราคาดหวังจากเว็บไซต์สมัยใหม่ JavaScript เกิดขึ้นในฐานะเทคโนโลยีฝั่งเบราว์เซอร์เพื่อทำให้เว็บแอปพลิเคชันมีความเป็นไดนามิกมากขึ้น เมื่อใช้ JavaScript เบราว์เซอร์จะสามารถตอบสนองต่อการโต้ตอบของผู้ใช้และเปลี่ยนแปลงเค้าโครงเนื้อหาบนเว็บเพจได้
+                
+                เมื่อภาษาผ่านการพัฒนาอย่างเต็มที่ นักพัฒนา JavaScript ก็สร้างไลบรารี เฟรมเวิร์ก และแนวทางปฏิบัติในการเขียนโปรแกรม แล้วเริ่มนำ JavaScript ไปใช้นอกเว็บเบราว์เซอร์ วันนี้ คุณสามารถใช้ JavaScript สำหรับทั่งการพัฒนาฝั่งไคลเอ็นต์และฝั่งเซิร์ฟเวอร์ เราให้ตัวอย่างกรณีการใช้พบที่พบบ่อยบางส่วนในหัวข้อย่อยต่อไปนี้:
+                </p><br>   
+
+            <h3>JavaScript ทำงานอย่างไร</h3><br>
+            <p style="text-indent: 2.5em;">ภาษาโปรแกรมทั้งหมดทำงานด้วยการแปลไวยากรณ์ที่คล้ายภาษาอังกฤษเป็นโค้ดสำหรับเครื่อง จากนั้นระบบปฏิบัติการจะเรียกใช้โค้ดนั้น JavaScript ได้รับการจัดประเภทอย่างกว้าง ๆ ว่าเป็นภาษาเขียนสคริปต์ หรือภาษาที่แปลผลแล้ว โค้ด JavaScript ได้รับการแปลผล—นั่นคือ แปลโดยตรงเป็นโค้ดภาษาสำหรับเครื่อง ด้วยกลไกล JavaScript ในขณะที่ในภาษาโปรแกรมอื่น ๆ คอมไพเลอร์จะคอมไพล์โค้ดทั้งหมดเป็นโค้ดสำหรับเครื่องในขั้นตอนที่แยกต่างหาก ดังนั้น ภาษาเขียนสคริปต์ทั้งหมดจึงเป็นภาษาโปรแกรม แต่ไม่ใช่ว่าภาษาโปรแกรมทั้งหมดจะเป็นภาษาเขียนสคริปต์เสมอไป
+            </p><br>
+
+            <h4>กลไก JavaScript</h4><br>
+            <p>กลไก JavaScript คือโปรแกรมคอมพิวเตอร์ที่เรียกใช้โค้ด JavaScript กลไก JavaScript เคยเป็นเพียงตัวแปลผล แต่กลไกสมัยใหม่ทั้งหมดใช้การคอมไพล์แบบ Just-in-time หรือรันไทม์เพื่อปรับปรุงประสิทธิภาพ
+            </p><br>
+
+            <h4>JavaScript ฝั่งไคลเอ็นต์</h4><br>
+            <p>JavaScript ฝั่งไคลเอ็นต์หมายถึงวิธีที่ JavaScript ทำงานในเบราว์เซอร์ของคุณ ในกรณี กลไก JavaScript จะอยู่ภายในโค้ดเบราว์เซอร์ เว็บเบราว์เซอร์เจ้าใหญ่ ๆ ทั้งหมดจะมาพร้อมกับกลไก JavaScript ในตัว
+            </p><br>
+            <p>นักพัฒนาแอปพลิเคชันเว็บจะเขียนโค้ด JavaScript ที่มีฟังก์ชันที่แตกต่างกันสัมพันธ์กับเหตุการณ์ต่าง ๆ เช่น การคลิกเมาส์ หรือการเลื่อนเมาส์ผ่าน ฟังก์ชันเหล่านี้จะเปลี่ยนแปลง HTML และ CSS
+
+                ต่อไปนี้เป็นภาพรวมว่า JavaScript ฝั่งไคลเอ็นต์ทำงานอย่างไร:
+                </p><br>
+            <p>1.เบราว์เซอร์โหลดเว็บเพจเมื่อคุณเยี่ยมชมเว็บเพจ<br><br>
+
+                2.ระหว่างการโหลด เบราว์เซอร์แปลงหน้าและองค์ประกอบทั้งหมดของหน้า เช่น ปุ่ม ป้าย และกล่องดรอปดาวน์ เป็นโครงสร้างข้อมูลที่เรียกว่าโมเดลอ็อบเจกต์เอกสาร (DOM) <br><br>
+                
+                3.กลไก JavaScript ของเบราว์เซอร์แปลงโค้ด JavaScript เป็นไบต์โค้ด โค้ดนี้เป็นตัวกลางระหว่างไวยากรณ์ JavaScript และเครื่อง<br><br>
+                
+                4.เหตุการณ์ต่าง ๆ เช่น การคลิกเมาส์บนปุ่ม จะกระตุ้นให้บล็อกโค้ด JavaScript ที่เกี่ยวข้องดำเนินการ จากนั้นกลไกจะแปลผลไบต์โค้ด และทำการเปลี่ยนแปลง DOM <br><br>
+                
+                5.เบราว์เซอร์แสดงผล DOM ใหม่<br>
+                </p><br>
+
+            <h4>JavaScript ฝั่งเซิร์ฟเวอร์</h4><br>
+            <p>JavaScript ฝั่งเซิร์ฟเวอร์หมายถึงการใช้ภาษาเขียนโค้ดในลอจิกของเซิร์ฟเวอร์แบ็คเอนด์ ในกรณีนี้ กลไก JavaScript จะอยู่บนเซิร์ฟเวอร์โดยตรง ฟังก์ชัน JavaScript ฝั่งเซิร์ฟเวอร์สามารถเข้าถึงฐานข้อมูล ดำเนินการทางตรรกะแบบต่าง ๆ และตอบสนองต่อเหตุการณ์ต่าง ๆ ที่ถูกกระตุ้นจากระบบปฏิบัติการของเซิร์ฟเวอร์ ข้อได้เปรียบหลักของการเขียนสคริปต์ฝั่งเซิร์ฟเวอร์คือคุณสามารถปรับแต่งการตอบสนองของเว็บไซต์โดยอ้างอิงตามข้อกำหนดของคุณ สิทธิ์เข้าถึงของคุณ และคำขอข้อมูลจากระบบได้เป็นอย่างมาก
+            </p><br>
+
+            <h4>ฝั่งไคลเอ็นต์เทียบกับฝั่งเซิร์ฟเวอร์</h4><br>
+            <p>คำว่าไดนามิกอธิบาย JavaScript ทั้งฝั่งไคลเอ็นต์และฝั่งเซิร์ฟเวอร์ พฤติกรรมไดนามิกคือความสามารถที่จะอัปเดตการแสดงของเว็บเพจเพื่อสร้างเนื้อหาใหม่ตามที่จำเป็น ความแตกต่างระหว่าง JavaScript ฝั่งไคลเอ็นต์และฝั่งเซิร์ฟเวอร์อยู่ที่วิธีการที่ JavaScript สร้างเนื้อหาใหม่ โค้ดฝั่งเซิร์ฟเวอร์สร้างเนื้อหาใหม่แบบไดนามิกด้วยการใช้ลอจิกของแอปพลิเคชันและปรับเปลี่ยนข้อมูลจากฐานข้อมูล ส่วน JavaScript ฝั่งไคลเอ็นต์สร้างเนื้อหาใหม่แบบไดนามิกภายในเบราว์เซอร์โดยใช้ลอจิกอินเทอร์เฟซผู้ใช้ และปรับเปลี่ยนเนื้อหาเว็บเพจที่อยู่บนไคลเอ็นต์อยู่แล้ว ความหมายมีความแตกต่างกันเล็กน้อยในสองบริบทแต่ก็มีความเกี่ยวข้องกัน และทั้งสองแนวทางทำงานร่วมกันเพื่อปรับปรุงประสิทธิภาพการใช้งานของผู้ใช้
+            </p><br>
+            <p>นอกเหนือจากการนำไปใช้ในคุณสมบัติไดนามิกแล้ว ความแตกต่างอีกประการหนึ่งระหว่างการใช้ JavaScript สองแบบคือทรัพยากรที่โค้ดสามารถเข้าถึงได้ ทางฝั่งไคลเอ็นต์ เบราว์เซอร์จะควบคุมสภาพแวดล้อมรันไทม์ของ JavaScript โค้ดจึงสามารถเข้าถึงได้เพียงทรัพยากรที่เบราว์เซอร์อนุญาตให้โค้ดเข้าถึงเท่านั้น ตัวอย่างเช่น โค้ดไม่สามารถเขียนเนื้อหาลงในฮาร์ดดิสก์ของคุณได้เว้นแต่คุณจะคลิกปุ่มดาวน์โหลด ในทางกลับกัน ฟังก์ชันฝั่งเซิร์ฟเวอร์สามารถเข้าถึงทรัพยากรทั้งหมดของเครื่องเซิร์ฟเวอร์ได้ตามที่จำเป็น</p>
+            <br>
+
+            <div class="jsCodeEx">
+
+                <h3>ตัวอย่างการใช้งาน JavaScript</h3><br>
+
+                <div>
+                    <h4>html</h4>
+                    <textarea class="codeEX" readonly><button onclick="changeColor(this)">Click Me!</button></textarea>
+                </div>
+
+                <div>
+                    <h4>CSS</h4>
+                    <textarea class="codeEX" readonly>button {
+padding: 2rem;
+background-color: chartreuse;
+border: 0;
+margin: 100px;
+color: #fff;
+}
+                </textarea>
+                </div>
+
+                <div>
+                    <h4>JS</h4>
+                    <textarea class="codeEX" readonly>function changeColor(x) {
+x.style.background = "red"
+}
+                </textarea>
+                </div>
+
+            </div>
+            <br><br>
+            <a href="#live" class="TIY">Try it Yourself</a>
+
+        </section>
+
+        <section class="bootstrapInfo">
+
+            <h2 id="bootstrap"><br> <br>Bootstrap</h2>
+
+        </section>
+
+        <section class="fbapiInfo">
+
+            <h2 id="facebook" style="margin-top: 60px;"><br> <br>FacrbookAPI</h2>
+
+        </section>
+
+        <section class="mapInfo">
+
+            <h2 id="map"><br> <br>Google map</h2>
+
+        </section>
+
+        <section class="lineInfo">
+
+            <h2 id="line"><br> <br>LineAPI</h2>
+
+        </section>
+
+        <section class="code-editor">
+
+            <h2 id="live">Live Code Editor</h2><br>
+
+            <div class="container">
+                <div class="left">
+
+                    <label>HTML</label>
+                    <textarea class="liveText" id="html-code" onkeyup="run()"></textarea>
+
+                    <label>CSS</label>
+                    <textarea class="liveText" id="css-code" onkeyup="run()"></textarea>
+
+                    <label>JS</label>
+                    <textarea class="liveText" id="js-code" onkeyup="run()"></textarea>
+                
+                </div>
+
+                <div class="right">
+                    <label>output</label>
+                    <iframe id="output"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+    <!-- end info -->
+
+    <!-- footer -->
+    <section class="footer">
+        Copyright 2023. Made by SKY
+    </section>
+    <!-- footer -->
+    
+    <!-- back to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <script src="main.js"></script>
+    <script src="main2.js"></script>
+</body>
+</html>
